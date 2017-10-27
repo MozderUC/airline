@@ -12,6 +12,14 @@ namespace airline.Classes
         private int humanCapacity;
         private int cargoCapacity;
 
+        public PassengerAircraft() { }
+        public PassengerAircraft(int Year, string ID, int Weight, int fuelRes, int Rage, int humanCapa, int cargoCapa)
+            :base(Year,ID,Weight,fuelRes,Rage)
+        {
+            this.HumanCapacity = humanCapa;
+            this.CargoCapacity = cargoCapa;
+        }
+
         public int HumanCapacity
         {
             get

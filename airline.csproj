@@ -44,6 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AircraftObj.cs" />
+    <Compile Include="Classes\Aircrafts\CargoAircrafts\Boeing-727-100C.cs" />
+    <Compile Include="Classes\Aircrafts\CargoAircrafts\An‑124‑100.cs" />
+    <Compile Include="Classes\Aircrafts\PassengerAircrafts\An-2.cs" />
+    <Compile Include="Classes\Aircrafts\PassengerAircrafts\Boeing-747.cs" />
+    <Compile Include="Classes\Aircrafts\PassengerAircrafts\Il-86.cs" />
+    <Compile Include="Classes\Airline.cs" />
+    <Compile Include="Classes\airlineParser.cs" />
     <Compile Include="Classes\CargoAircraft.cs" />
     <Compile Include="Classes\PassengerAircraft.cs" />
     <Compile Include="Interfaces\ICargoCapacity.cs" />
@@ -54,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

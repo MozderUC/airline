@@ -10,27 +10,91 @@ namespace airline.Classes
     abstract class AircraftObj : IRageData
     {
         // Common aircraft data information
-        public string modelName;
-        public int manufactureYear;
-        public string ID;
+        private int manufactureYear;
+        private string ID;
 
-        public int aircraftWeight;
-        public int fuelReserve;
+        private int aircraftWeight;
+        private int fuelReserve;
 
         // Rage data
         private int averarageRage;
         private int customRage;
 
-        public int AverarageRage
+        #region Constructor
+        public AircraftObj() { }
+        public AircraftObj(int Year,string ID, int Weight, int fuelRes, int Rage)
+        {
+            this.ManufactureYear = Year;
+            this.ID1 = ID;
+            this.AircraftWeight = Weight;
+            this.FuelReserve = fuelRes;
+            this.AverarageRage = Rage;
+        }
+        #endregion
+
+        #region Props
+        public int ManufactureYear
         {
             get
             {
-                throw new NotImplementedException();
+                return manufactureYear;
             }
 
             set
             {
-                throw new NotImplementedException();
+                manufactureYear = value;
+            }
+        }
+
+        public string ID1
+        {
+            get
+            {
+                return ID;
+            }
+
+            set
+            {
+                ID = value;
+            }
+        }
+
+        public int AircraftWeight
+        {
+            get
+            {
+                return aircraftWeight;
+            }
+
+            set
+            {
+                aircraftWeight = value;
+            }
+        }
+
+        public int FuelReserve
+        {
+            get
+            {
+                return fuelReserve;
+            }
+
+            set
+            {
+                fuelReserve = value;
+            }
+        }
+
+        public int AverarageRage
+        {
+            get
+            {
+                return averarageRage;
+            }
+
+            set
+            {
+                averarageRage = value;
             }
         }
 
@@ -38,24 +102,24 @@ namespace airline.Classes
         {
             get
             {
-                throw new NotImplementedException();
+                return customRage;
             }
 
             set
             {
-                throw new NotImplementedException();
+                customRage = value;
             }
         }
-
+        #endregion
 
         public override string ToString()
         {
-            return modelName + " " + ID;
+            return ID1;
         }
 
         public virtual int customRageCalculate()
         {
-            throw new NotImplementedException();
+            return this.AverarageRage;            
         }
     }
 }

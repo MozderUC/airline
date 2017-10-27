@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace airline.Classes.Aircrafts.CargoAircrafts
 {
-    class An_124_100 : CargoAircraft
+    class Boeing_727_100C : CargoAircraft
     {
-        public An_124_100() { }
-        public An_124_100(int Year, string ID, int Weight, int fuelRes, int Rage, int cargoCap)
+        public Boeing_727_100C() { }
+        public Boeing_727_100C(int Year, string ID, int Weight, int fuelRes, int Rage, int cargoCap)
             :base(Year,ID,Weight,fuelRes,Rage,cargoCap)
-        {            
+        {
         }
         public override int customRageCalculate()
         {

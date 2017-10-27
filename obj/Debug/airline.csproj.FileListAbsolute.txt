@@ -1,2 +1,7 @@
 D:\GitHub\airline\airline\bin\Debug\airline.exe.config
 D:\GitHub\airline\bin\Debug\airline.exe.config
+D:\GitHub\airline\bin\Debug\airline.exe
+D:\GitHub\airline\bin\Debug\airline.pdb
+D:\GitHub\airline\obj\Debug\airline.csprojResolveAssemblyReference.cache
+D:\GitHub\airline\obj\Debug\airline.exe
+D:\GitHub\airline\obj\Debug\airline.pdb
