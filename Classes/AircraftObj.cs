@@ -3,117 +3,59 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using airline.Interfaces;
 
 namespace airline.Classes
 {
-    abstract class AircraftObj
+    abstract class AircraftObj : IRageData
     {
         // Common aircraft data information
-        private string modelName;
-        private int manufactureYear;
-        private string ID;
+        public string modelName;
+        public int manufactureYear;
+        public string ID;
 
-        private int aircraftWeight;
-        private int maxRange;
-        private int fuelReserve;
+        public int aircraftWeight;
+        public int fuelReserve;
 
+        // Rage data
+        private int averarageRage;
+        private int customRage;
 
-        #region Properties
-        public string ModelName
+        public int AverarageRage
         {
             get
             {
-                return modelName;
+                throw new NotImplementedException();
             }
 
             set
             {
-                modelName = value;
+                throw new NotImplementedException();
             }
         }
 
-        public int ManufactureYear
+        public int CustomRage
         {
             get
             {
-                return manufactureYear;
+                throw new NotImplementedException();
             }
 
             set
             {
-                manufactureYear = value;
+                throw new NotImplementedException();
             }
         }
 
-        public string ID1
+
+        public override string ToString()
         {
-            get
-            {
-                return ID;
-            }
-
-            set
-            {
-                ID = value;
-            }
+            return modelName + " " + ID;
         }
 
-        public int AircraftWeight
+        public virtual int customRageCalculate()
         {
-            get
-            {
-                return aircraftWeight;
-            }
-
-            set
-            {
-                aircraftWeight = value;
-            }
+            throw new NotImplementedException();
         }
-
-        public int MaxRange
-        {
-            get
-            {
-                return maxRange;
-            }
-
-            set
-            {
-                maxRange = value;
-            }
-        }
-
-        public int FuelReserve
-        {
-            get
-            {
-                return fuelReserve;
-            }
-
-            set
-            {
-                fuelReserve = value;
-            }
-        }
-        #endregion
-
-        #region Constructors
-        public AircraftObj() { }
-
-        public AircraftObj(string modelName, int aircraftWeight, int maxRange, string ID, int fuelReserve)
-        {
-            this.ModelName = modelName;
-            this.AircraftWeight = aircraftWeight;
-            this.MaxRange = maxRange;
-            this.ID1 = ID;
-            this.FuelReserve = fuelReserve;
-        }
-        #endregion
-
-        public virtual void rageCalculate()
-        { }
-
-
     }
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace airline.Interfaces
+namespace airline.Classes.Aircrafts.CargoAircrafts
 {
-    interface IHumanCapacity
+    class An_124_100
     {
-        int HumanCapacity { get; set; }
     }
 }

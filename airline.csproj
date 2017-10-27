@@ -46,11 +46,15 @@
     <Compile Include="Classes\AircraftObj.cs" />
     <Compile Include="Classes\CargoAircraft.cs" />
     <Compile Include="Classes\PassengerAircraft.cs" />
+    <Compile Include="Interfaces\ICargoCapacity.cs" />
+    <Compile Include="Interfaces\IHumanCapacity.cs" />
+    <Compile Include="Interfaces\IRageData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

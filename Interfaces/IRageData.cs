@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace airline.Interfaces
 {
-    interface IHumanCapacity
+    interface IRageData
     {
-        int HumanCapacity { get; set; }
+        int AverarageRage { get; set; }
+        int CustomRage { get; set; }
+
+        int customRageCalculate();
+
     }
 }

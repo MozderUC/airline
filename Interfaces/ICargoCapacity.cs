@@ -8,5 +8,6 @@ namespace airline.Interfaces
 {
     interface ICargoCapacity
     {
+        int CargoCapacity { get; set; }
     }
 }

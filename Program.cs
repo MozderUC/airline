@@ -10,6 +10,7 @@ namespace airline
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
