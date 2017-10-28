@@ -13,8 +13,8 @@ namespace airline.Classes
 
 
         public CargoAircraft() { }
-        public CargoAircraft(int Year, string ID, int Weight, int fuelRes, int Rage, int cargoCapacity)
-            :base(Year,ID,Weight,fuelRes,Rage)
+        public CargoAircraft(int Year, string ID, int Weight, int fuelRes, int Rage, string ModelName, int cargoCapacity, int FuelCons)
+            :base(Year,ID,Weight,fuelRes,Rage,ModelName, FuelCons)
         {
             this.CargoCapacity = cargoCapacity;
         }

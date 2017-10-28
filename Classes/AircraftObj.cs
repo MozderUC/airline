@@ -7,14 +7,16 @@ using airline.Interfaces;
 
 namespace airline.Classes
 {
-    abstract class AircraftObj : IRageData
+    abstract class AircraftObj : IRageData, IComparable<AircraftObj>
     {
         // Common aircraft data information
+        private string modelName;
         private int manufactureYear;
         private string ID;
 
         private int aircraftWeight;
         private int fuelReserve;
+        private int fuelConsumption;
 
         // Rage data
         private int averarageRage;
@@ -22,13 +24,15 @@ namespace airline.Classes
 
         #region Constructor
         public AircraftObj() { }
-        public AircraftObj(int Year,string ID, int Weight, int fuelRes, int Rage)
+        public AircraftObj(int Year,string ID, int Weight, int fuelRes, int Rage, string ModelNa, int FuelCons)
         {
             this.ManufactureYear = Year;
             this.ID1 = ID;
             this.AircraftWeight = Weight;
             this.FuelReserve = fuelRes;
             this.AverarageRage = Rage;
+            this.ModelName = ModelNa;
+            this.FuelConsumption = FuelCons;
         }
         #endregion
 
@@ -110,16 +114,53 @@ namespace airline.Classes
                 customRage = value;
             }
         }
+
+        public string ModelName
+        {
+            get
+            {
+                return modelName;
+            }
+
+            set
+            {
+                modelName = value;
+            }
+        }
+
+        public int FuelConsumption
+        {
+            get
+            {
+                return fuelConsumption;
+            }
+
+            set
+            {
+                fuelConsumption = value;
+            }
+        }
         #endregion
 
         public override string ToString()
         {
-            return ID1;
+            return String.Format("Model:{0}\tFuelConsumption:{1}\tRage:{2}\n",
+                this.ModelName, this.FuelConsumption, this.AverarageRage);
         }
 
         public virtual int customRageCalculate()
         {
             return this.AverarageRage;            
+        }
+
+        public int CompareTo(AircraftObj other)
+        {
+            if (this.averarageRage > other.averarageRage)
+                return 1;
+            if (this.averarageRage < other.averarageRage)
+                return -1;
+            else
+                return 0;
         }
     }
 }

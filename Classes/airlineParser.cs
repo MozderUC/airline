@@ -36,12 +36,12 @@ namespace airline.Classes
                             {
                                 case "An-2":
                                     an_2 = readAn2(sr);
-                                    aircrafts.Add(new An_2(an_2.ManufactureYear, an_2.ID1, an_2.AircraftWeight, an_2.FuelReserve, an_2.AverarageRage, an_2.HumanCapacity, an_2.CargoCapacity));
+                                    aircrafts.Add(new An_2(an_2.ManufactureYear, an_2.ID1, an_2.AircraftWeight, an_2.FuelReserve, an_2.AverarageRage, an_2.HumanCapacity, an_2.CargoCapacity, an_2.ModelName, an_2.FuelConsumption));
                                     break;
 
                                 case "Boeing-747":
                                     boeing_747 = readBoeing_747(sr);
-                                    aircrafts.Add(new Boeing_747(boeing_747.ManufactureYear, boeing_747.ID1, boeing_747.AircraftWeight, boeing_747.FuelReserve, boeing_747.AverarageRage, boeing_747.HumanCapacity, boeing_747.CargoCapacity));
+                                    aircrafts.Add(new Boeing_747(boeing_747.ManufactureYear, boeing_747.ID1, boeing_747.AircraftWeight, boeing_747.FuelReserve, boeing_747.AverarageRage, boeing_747.HumanCapacity, boeing_747.CargoCapacity, boeing_747.ModelName, boeing_747.FuelConsumption));
                                     break;                     
                             }
                         }
@@ -66,10 +66,12 @@ namespace airline.Classes
                         string[] mbuff = buffer.Split(':');
                         switch (mbuff[0])
                         {
+                            case "modelName": an_2.ModelName = mbuff[1]; break;
                             case "manufactureYear": an_2.ManufactureYear = Convert.ToInt32(mbuff[1]); break;
                             case "ID": an_2.ID1 = mbuff[1]; break;
                             case "aircraftWeight": an_2.AircraftWeight = Convert.ToInt32(mbuff[1]); break;
                             case "fuelReserve": an_2.FuelReserve = Convert.ToInt32(mbuff[1]); break;
+                            case "fuelConsumption": an_2.FuelConsumption = Convert.ToInt32(mbuff[1]); break;
                             case "averarageRage": an_2.AverarageRage = Convert.ToInt32(mbuff[1]); break;
                             case "humanCapacity": an_2.HumanCapacity = Convert.ToInt32(mbuff[1]); break;
                             case "cargoCapacity": an_2.CargoCapacity = Convert.ToInt32(mbuff[1]); break;
@@ -93,10 +95,12 @@ namespace airline.Classes
                         string[] mbuff = buffer.Split(':');
                         switch (mbuff[0])
                         {
+                            case "modelName": boeing_747.ModelName = mbuff[1]; break;
                             case "manufactureYear": boeing_747.ManufactureYear = Convert.ToInt32(mbuff[1]); break;
                             case "ID": boeing_747.ID1 = mbuff[1]; break;
                             case "aircraftWeight": boeing_747.AircraftWeight = Convert.ToInt32(mbuff[1]); break;
                             case "fuelReserve": boeing_747.FuelReserve = Convert.ToInt32(mbuff[1]); break;
+                            case "fuelConsumption": boeing_747.FuelConsumption = Convert.ToInt32(mbuff[1]); break;
                             case "averarageRage": boeing_747.AverarageRage = Convert.ToInt32(mbuff[1]); break;
                             case "humanCapacity": boeing_747.HumanCapacity = Convert.ToInt32(mbuff[1]); break;
                             case "cargoCapacity": boeing_747.CargoCapacity = Convert.ToInt32(mbuff[1]); break;

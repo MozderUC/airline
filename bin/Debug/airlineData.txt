@@ -1,18 +1,22 @@
 {
 An-2
+modelName:An-2
 manufactureYear:1991
 ID:1266
 aircraftWeight:900
 fuelReserve:70
+fuelConsumption:120
 averarageRage:2000
 humanCapacity:60
 cargoCapacity:20
 
 Boeing-747
+modelName:Boeing-747
 manufactureYear:1995
 ID:1288
 aircraftWeight:1326
 fuelReserve:90
+fuelConsumption:250
 averarageRage:3000
 humanCapacity:70
 cargoCapacity:40

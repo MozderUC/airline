@@ -60,21 +60,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="airline.Program" Collapsed="true">
-    <Position X="12" Y="0.5" Width="1.5" />
+    <Position X="12" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="airline.Interfaces.ICargoCapacity" Collapsed="true">
-    <Position X="12" Y="1.75" Width="1.5" />
+    <Position X="13.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Interfaces\ICargoCapacity.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="airline.Interfaces.IHumanCapacity" Collapsed="true">
-    <Position X="13.75" Y="1.75" Width="1.5" />
+    <Position X="15.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IHumanCapacity.cs</FileName>

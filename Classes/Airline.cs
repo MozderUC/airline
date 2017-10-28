@@ -15,5 +15,35 @@ namespace airline.Classes
         {
             listAircraft = airlinePars.parse();
         }
+
+        public string ShowAircraftList()
+        {
+            string buff="";
+            foreach(AircraftObj el in listAircraft)
+            {
+                //buff += el.ToString;
+                buff = buff + el.ToString();
+            }
+            return buff;          
+        }
+
+        public void SortByRage()
+        {
+            listAircraft.Sort();
+        }
+
+        public string fuelConsumptionSearching(int min, int max)
+        {
+            string buff="";
+            foreach(AircraftObj el in listAircraft)
+            {
+                if (el.FuelConsumption > min && el.FuelConsumption < max)
+                    buff = buff + el.ToString();
+            }
+            return buff;
+        }
+
+
+
     }
 }
