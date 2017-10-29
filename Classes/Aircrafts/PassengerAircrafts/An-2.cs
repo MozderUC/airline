@@ -17,5 +17,10 @@ namespace airline.Classes.Aircrafts.PassengerAircrafts
         {
             return base.customRageCalculate();
         }
+        public override string ToString()
+        {
+            return String.Format("Model: {0}\t\tFuelConsumption: {1}\tRage: {2}\n",
+                this.ModelName, this.FuelConsumption, this.AverarageRage);
+        }
     }
 }

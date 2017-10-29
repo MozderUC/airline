@@ -3,7 +3,7 @@
   <Class Name="airline.Classes.AircraftObj" Collapsed="true">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAgQgAAEAAAAIAAAACAgABAAIAAQABIAAAA=</HashCode>
+      <HashCode>AgAAAAAAAAgQgAQEAAAAIAAAACAhABAAKQAQABoAAAA=</HashCode>
       <FileName>Classes\AircraftObj.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -60,10 +60,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="airline.Program" Collapsed="true">
-    <Position X="12" Y="1.75" Width="1.5" />
+    <Position X="13.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="airline.Classes.airlineParser" Collapsed="true">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABAAAEAAIAA=</HashCode>
+      <FileName>Classes\airlineParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="airline.Classes.Airline" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAEAAAAAAAAAAAEAAAAAACABAAAAAAAA=</HashCode>
+      <FileName>Classes\Airline.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="airline.Interfaces.ICargoCapacity" Collapsed="true">

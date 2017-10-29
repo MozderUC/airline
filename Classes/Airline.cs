@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using airline.Interfaces;
 
 namespace airline.Classes
 {
     class Airline
     {
-        public List<AircraftObj> listAircraft = new List<AircraftObj>();
+        private List<AircraftObj> listAircraft = new List<AircraftObj>();
         private airlineParser airlinePars = new airlineParser();
 
+
+        #region Constructor
         public Airline()
         {
             listAircraft = airlinePars.parse();
         }
+        #endregion
 
+
+        #region Methods
         public string ShowAircraftList()
         {
             string buff="";
@@ -43,7 +49,33 @@ namespace airline.Classes
             return buff;
         }
 
+        public int totalCargoCapacity()
+        {
+            int totalCargo=0;
+            foreach (AircraftObj el in listAircraft)
+            {
+                ICargoCapacity cargoObj = el as ICargoCapacity;
+                if (cargoObj != null)
+                {
+                    totalCargo += cargoObj.CargoCapacity;
+                }
+            }
+            return totalCargo;
+        }
 
-
+        public int totalPassengerCapacity()
+        {
+            int totalPassnger = 0;
+            foreach (AircraftObj el in listAircraft)
+            {
+                IHumanCapacity cargoObj = el as IHumanCapacity;
+                if (cargoObj != null)
+                {
+                    totalPassnger += cargoObj.HumanCapacity;
+                }
+            }
+            return totalPassnger;
+        }
+        #endregion
     }
 }

@@ -142,9 +142,10 @@ namespace airline.Classes
         }
         #endregion
 
+        #region Methods
         public override string ToString()
         {
-            return String.Format("Model:{0}\tFuelConsumption:{1}\tRage:{2}\n",
+            return String.Format("Model: {0}\tFuelConsumption: {1}\tRage: {2}\n",
                 this.ModelName, this.FuelConsumption, this.AverarageRage);
         }
 
@@ -162,5 +163,6 @@ namespace airline.Classes
             else
                 return 0;
         }
+        #endregion Methods
     }
 }
